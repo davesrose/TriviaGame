@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Back to the Future Trivia Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<style type="text/css">
+		.container {
+			background: rgba(255,255,255,0.8);
+		}
+		html {
+			background-image: url('assets/images/wallpaper4.jpg');
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+		<div class="container">
+		<br><br><br>
+		<h1 id="output1"></h1><br>
+		<h1 id="output2"></h1><br><br>
+		<a href="game.html"><img src="assets/images/restart.png" id="startBTN"></a>
+	</div>
+</div>
+<script type="text/javascript">
+	var one = localStorage.getItem("winner");
+	var two = localStorage.getItem("lose");
+	$("h1#output1").html("Number of correct answers: " + one);
+	$("h1#output2").html("Number of incorrect answers: " + two);
+</script>
+</body>
+</html>

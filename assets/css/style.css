@@ -1,0 +1,106 @@
+html {
+    background: url('../images/wallpaper1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.container {
+	background-color: rgba(179,226,225,0.8);
+    background: url('../images/container.jpg') no-repeat center center fixed; 
+    background-size: 100%;
+	border-radius: 15px;
+	border: solid 2px #fff;
+	margin-top: 15px;
+
+}
+#logo {
+	height: 150px;
+	margin-left: 10%;
+	margin-top: 5%;
+	float: left;
+}
+#triviaPNG {
+	margin-top: 10%;
+	float: left;
+	height: 70px;
+}
+.instructions {
+	width: 60%;
+	padding: 2% 5%;
+	border-radius: 12px;
+	background-color: rgba(179,226,225,0.9);
+	margin: 15px auto;
+}
+.instructions p {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 120%;
+}
+#startBTN {
+	margin: 20px 30%;
+	width: 306px;
+	height: 110px;
+}
+.content {
+	width: 80%;
+	padding: 2% 5%;
+	border-radius: 12px;
+	background-color: rgba(179,226,225,0.9);
+	margin: 15px auto;
+}
+.question {
+	margin: 8px auto;
+}
+form {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 90%;
+}
+h2 {
+	font-size: 130%;
+	text-align: center;
+	margin-bottom: -12px;
+	padding-top: 12px;
+}
+h1 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 190%;
+	text-align: center;
+
+}
+
+label {
+	float: left;
+	margin: 3px 0px;
+}
+label > input{
+  visibility: hidden;
+  position: absolute;
+  margin-left: 5px;
+}
+label > input + .radio {
+  cursor:pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  background: url("../images/radio.png") no-repeat;
+  background-size: 60px 20px;
+}
+label > input:hover + .radio { 
+	background-position-x: -20px;
+}
+label > input:hover + .radio + .answer {
+	color: #f15521;
+}
+.answer { 
+	margin-top: -15px;
+	margin-left: 32px;
+	margin-right: 10px;
+}
+label > input:checked + .radio {
+	background-position-x: -40px; 
+}
+

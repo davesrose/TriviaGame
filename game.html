@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Back to the Future Trivia Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<style type="text/css">
+		html {
+			background-image: url('assets/images/wallpaper4.jpg');
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<img src="assets/images/logo.png" id="logo"><img src="assets/images/trivia.png" id="triviaPNG">
+		<div style="clear: both;"></div>
+		<div class="content">
+			<h1 id="timer"></h1>
+			<form>
+				<div class="question">
+					<h2>The main character, Marty, has a father named?</h2><br>
+					<label><input type="radio" name="one" value="a"><div class="radio"></div><div class="answer">George McFly</div></label>
+					<label><input type="radio" name="one" value="b"><div class="radio"></div><div class="answer">Skip Flore</div></label>
+					<label><input type="radio" name="one" value="c"><div class="radio"></div><div class="answer">Martin McFly</div></label>
+					<label><input type="radio" name="one" value="d"><div class="radio"></div><div class="answer">George McDonald</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>The town in which Back to the Future occurs is?</h2><br>
+					<label><input type="radio" name="two" value="a"><div class="radio"></div><div class="answer">Petaluma</div></label>
+					<label><input type="radio" name="two" value="b"><div class="radio"></div><div class="answer">Encino</div></label>
+					<label><input type="radio" name="two" value="c"><div class="radio"></div><div class="answer">Hill Valley</div></label>
+					<label><input type="radio" name="two" value="d"><div class="radio"></div><div class="answer">Salt Lake</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What was the title of the movie that Universal head Sid Sheinberg wanted?</h2><br>
+					<label><input type="radio" name="three" value="a"><div class="radio"></div><div class="answer">Paradox</div></label>
+					<label><input type="radio" name="three" value="b"><div class="radio"></div><div class="answer">Spaceman From Pluto</div></label>
+					<label><input type="radio" name="three" value="c"><div class="radio"></div><div class="answer">Blast from the Past</div></label>
+					<label><input type="radio" name="three" value="d"><div class="radio"></div><div class="answer">My Mom has the Hots for Me!</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Why did Disney turn down Back to the Future</h2><br>
+					<label><input type="radio" name="four" value="a"><div class="radio"></div><div class="answer">They thought the music was too loud</div></label>
+					<label><input type="radio" name="four" value="b"><div class="radio"></div><div class="answer">They thought it too politically incorrect</div></label>
+					<label><input type="radio" name="four" value="c"><div class="radio"></div><div class="answer">They didn't get the humor</div></label>
+					<label><input type="radio" name="four" value="d"><div class="radio"></div><div class="answer">They thought it was too risque</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>When is Back to the Future Day?</h2><br>
+					<label><input type="radio" name="five" value="a"><div class="radio"></div><div class="answer">October 26</div></label>
+					<label><input type="radio" name="five" value="b"><div class="radio"></div><div class="answer">October 24</div></label>
+					<label><input type="radio" name="five" value="c"><div class="radio"></div><div class="answer">November 1</div></label>
+					<label><input type="radio" name="five" value="d"><div class="radio"></div><div class="answer">November 12</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Who was originally considered for the role of Marty?</h2><br>
+					<label><input type="radio" name="six" value="a"><div class="radio"></div><div class="answer">John Cusack</div></label>
+					<label><input type="radio" name="six" value="b"><div class="radio"></div><div class="answer">Eric Stolz</div></label>
+					<label><input type="radio" name="six" value="c"><div class="radio"></div><div class="answer">Eric Roberts</div></label>
+					<label><input type="radio" name="six" value="d"><div class="radio"></div><div class="answer">Jason Bateman</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Doc's pet was originally?</h2><br>
+					<label><input type="radio" name="seven" value="a"><div class="radio"></div><div class="answer">A chimp named Shemp</div></label>
+					<label><input type="radio" name="seven" value="b"><div class="radio"></div><div class="answer">An orangutan named Galileo</div></label>
+					<label><input type="radio" name="seven" value="c"><div class="radio"></div><div class="answer">A dog named Pluto</div></label>
+					<label><input type="radio" name="seven" value="d"><div class="radio"></div><div class="answer">A dog named Niels</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Why was Elisabeth Shue cast as Jennifer in the second movie?</h2><br>
+					<label><input type="radio" name="eight" value="a"><div class="radio"></div><div class="answer">Producers thought Elisabeth Shue had more clout</div></label>
+					<label><input type="radio" name="eight" value="b"><div class="radio"></div><div class="answer">Claudia Wells was on a kibbutz</div></label>
+					<label><input type="radio" name="eight" value="c"><div class="radio"></div><div class="answer">Claudia Wells's mother was diagnosed with cancer</div></label>
+					<label><input type="radio" name="eight" value="d"><div class="radio"></div><div class="answer">Claudia Wells had prior commitments with ABC</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What's Biff's great-grandfather's name?</h2><br>
+					<label><input type="radio" name="9" value="a"><div class="radio"></div><div class="answer">Griff "Wild Dog" Tannen</div></label>
+					<label><input type="radio" name="9" value="b"><div class="radio"></div><div class="answer">Wild Bill Tannen</div></label>
+					<label><input type="radio" name="9" value="c"><div class="radio"></div><div class="answer">Buford "Mad Dog" Tannen</div></label>
+					<label><input type="radio" name="9" value="d"><div class="radio"></div><div class="answer">Buford "Wild Dog" Tannen</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What celebrity did Thomas Wilson base alternate Biff Tannen on?</h2><br>
+					<label><input type="radio" name="10" value="a"><div class="radio"></div><div class="answer">Donald Trump</div></label>
+					<label><input type="radio" name="10" value="b"><div class="radio"></div><div class="answer">Mike Tyson</div></label>
+					<label><input type="radio" name="10" value="c"><div class="radio"></div><div class="answer">Ronald Reagan</div></label>
+					<label><input type="radio" name="10" value="d"><div class="radio"></div><div class="answer">Leonard Stern</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What is Lorraine McFly's maiden name?</h2><br>
+					<label><input type="radio" name="11" value="a"><div class="radio"></div><div class="answer">Clayton</div></label>
+					<label><input type="radio" name="11" value="b"><div class="radio"></div><div class="answer">Reagan</div></label>
+					<label><input type="radio" name="11" value="c"><div class="radio"></div><div class="answer">Barnes</div></label>
+					<label><input type="radio" name="11" value="d"><div class="radio"></div><div class="answer">Baines</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What kind of dog is Doc's dog, Einstein?</h2><br>
+					<label><input type="radio" name="12" value="a"><div class="radio"></div><div class="answer">Collie</div></label>
+					<label><input type="radio" name="12" value="b"><div class="radio"></div><div class="answer">Catalan sheepdog</div></label>
+					<label><input type="radio" name="12" value="c"><div class="radio"></div><div class="answer">Old English Sheepdog</div></label>
+					<label><input type="radio" name="12" value="d"><div class="radio"></div><div class="answer">Wheaten Terrier</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Doc's sons names are?</h2><br>
+					<label><input type="radio" name="13" value="a"><div class="radio"></div><div class="answer">Jules and Verne</div></label>
+					<label><input type="radio" name="13" value="b"><div class="radio"></div><div class="answer">Niels and Newton</div></label>
+					<label><input type="radio" name="13" value="c"><div class="radio"></div><div class="answer">Copernicus and Galileo</div></label>
+					<label><input type="radio" name="13" value="d"><div class="radio"></div><div class="answer">Bert and Ernie</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>How did Clara Clayton originally die?</h2><br>
+					<label><input type="radio" name="14" value="a"><div class="radio"></div><div class="answer">"Mad Dog" Tannen robed her</div></label>
+					<label><input type="radio" name="14" value="b"><div class="radio"></div><div class="answer">Her wagon plummeted down Shonash Ravine</div></label>
+					<label><input type="radio" name="14" value="c"><div class="radio"></div><div class="answer">In a railroad accident</div></label>
+					<label><input type="radio" name="14" value="d"><div class="radio"></div><div class="answer">Her horses reared on top of her</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What are Marty's siblings names?</h2><br>
+					<label><input type="radio" name="15" value="a"><div class="radio"></div><div class="answer">Sam and Stella McFly</div></label>
+					<label><input type="radio" name="15" value="b"><div class="radio"></div><div class="answer">Bob and Linda McFly</div></label>
+					<label><input type="radio" name="15" value="c"><div class="radio"></div><div class="answer">Goerge and Marlene McFly</div></label>
+					<label><input type="radio" name="15" value="d"><div class="radio"></div><div class="answer">Dave and Linda McFly</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>What was the name of the mall in which Marty goes back in time?</h2><br>
+					<label><input type="radio" name="16" value="a"><div class="radio"></div><div class="answer">Hill Valley Mall</div></label>
+					<label><input type="radio" name="16" value="b"><div class="radio"></div><div class="answer">Lone Pine Mall</div></label>
+					<label><input type="radio" name="16" value="c"><div class="radio"></div><div class="answer">Twin Pines Mall</div></label>
+					<label><input type="radio" name="16" value="d"><div class="radio"></div><div class="answer">Hilldale Mall</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Why was a DeLorean chosen as the time machine?</h2><br>
+					<label><input type="radio" name="17" value="a"><div class="radio"></div><div class="answer">It would look like a UFO in 1955</div></label>
+					<label><input type="radio" name="17" value="b"><div class="radio"></div><div class="answer">It would be more durable for time travel</div></label>
+					<label><input type="radio" name="17" value="c"><div class="radio"></div><div class="answer">Robert Zemeckis was a proud owner</div></label>
+					<label><input type="radio" name="17" value="d"><div class="radio"></div><div class="answer">John DeLorean was an investor</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="question">
+					<h2>Which personality was not on a vid screen in the cafe 80's?</h2><br>
+					<label><input type="radio" name="18" value="a"><div class="radio"></div><div class="answer">Michael Jackson</div></label>
+					<label><input type="radio" name="18" value="b"><div class="radio"></div><div class="answer">Ayatollah Khomeini</div></label>
+					<label><input type="radio" name="18" value="c"><div class="radio"></div><div class="answer">Ronald Reagan</div></label>
+					<label><input type="radio" name="18" value="d"><div class="radio"></div><div class="answer">Huey Lewis</div></label>
+					<div style="clear: both;"></div>
+				</div>
+				<br><br><br>
+				<input type="submit" />
+			</form>
+		</div>
+	</div>
+<audio autoplay=""><source src="assets/music/track1.mp3" type="audio/mpeg"></audio>
+</div>
+</body>
+</html>
