@@ -18,7 +18,7 @@ $(document).ready(function() {
 	//variable for converting miliseconds to seconds
 	var seconds = 1000;
 	//variable for game length in seconds
-	var maxCount = 120;
+	var maxCount = 180;
 
 	//initialize the win and loss variables
 	var wins = 0;
@@ -54,7 +54,9 @@ $(document).ready(function() {
 		"15" : "d",
 		"16" : "c",
 		"17" : "a",
-		"18" : "d"
+		"18" : "d",
+		"19" : "b",
+		"20" : "c"
 	}
 
 
