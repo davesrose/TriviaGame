@@ -12,7 +12,7 @@ html {
 .container {
 	background-color: rgba(179,226,225,0.8);
     background: url('../images/container.jpg') no-repeat center center fixed; 
-    background-size: 100%;
+    background-size: auto 100%;
 	border-radius: 15px;
 	border: solid 2px #fff;
 	margin-top: 15px;
@@ -71,7 +71,16 @@ h1 {
 	text-align: center;
 
 }
-
+#timer2 {
+	display: none;
+	position: fixed;
+	bottom: 60px;
+	right: 10%;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 1px #fff;
+	background-color: rgba(179,226,225,1);
+}
 label {
 	float: left;
 	margin: 3px 0px;

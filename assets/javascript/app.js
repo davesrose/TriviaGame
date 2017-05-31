@@ -24,10 +24,20 @@ $(document).ready(function() {
 	var wins = 0;
 	var losses = 0;
 
+
+
 	//make timer that will stop at 0 and go to checkAnswers function
 	var counter = setInterval(function() {
 			maxCount = maxCount-1;
 			$("#timer").html("You have " + maxCount + " seconds left.");
+			$("#timer2").html(maxCount);
+			if (maxCount === 60) {
+				// console.log("60 seconds")
+				$("#timer2").css({
+					"display" : "inline-block"
+				})
+
+			}
 			if (maxCount === 0) {
 				clearInterval(counter);
 				checkAnwers();
@@ -79,6 +89,7 @@ $(document).ready(function() {
 		window.location.href = "results.html";
 	}
 
+	//function that get calls during timeout that looks at each answer checked and then goes to markIncorrect or markCorrect functions
 	function checkAnwers(e) {
 		$questions = $(".question");
 		$questions.each(function(){
@@ -96,6 +107,7 @@ $(document).ready(function() {
 		});
 	};
 
+	//A similar checkAnwers function for when the player hits the submit button before time runs out
 	$("form").on("submit", function(e){
 		clearInterval(counter);
 		e.preventDefault();
